@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.m
+//  FirstViewController.m
 //  proj-pti-ballon
 //
 //  Created by Élèves on 09/10/12.
@@ -22,39 +22,64 @@
     }
     return self;
 }
+- (void) modalViewControllerDidFinish:(ModalViewController *)viewController {
+    
+    [self dismissModalViewControllerAnimated:YES];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor blueColor]];
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [button setFrame:CGRectMake(30, 30, 280, 30)];
-    [button setTitle:@"Premier controleur de la liste" forState:UIControlStateNormal]; [button addTarget:self action:@selector(selectFirstViewControllerOfListe:)forControlEvents:UIControlEventTouchUpInside]; [self.view addSubview:button];
     
-    UIButton *button2 = [UIButton buttonWithType:UIButtonTypeRoundedRect]; [button2 setFrame:CGRectMake(30, 70, 280, 30)];
-    [button2 setTitle:@"Premier controleur" forState:UIControlStateNormal]; [button2 addTarget:self action:@selector(selectFirstViewController:)forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button2];
+    // Flip
+    UIButton *flipButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [flipButton addTarget:self action:@selector(flipToModalView:) forControlEvents:UIControlEventTouchUpInside];
+    [flipButton setFrame:CGRectMake(30, 30, 120, 30)];
+    [flipButton setTitle:@"Flip" forState:UIControlStateNormal];
+    [self.view addSubview:flipButton];
+    // Recouvrement vertical
+    UIButton *coverButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [coverButton addTarget:self action:@selector(coverToModalView:) forControlEvents:UIControlEventTouchUpInside];
+    [coverButton setFrame:CGRectMake(170, 30, 120, 30)];
+    [coverButton setTitle:@"Recouvrement" forState:UIControlStateNormal];
+    [self.view addSubview:coverButton];
+    // Fondu
+    UIButton *dissolveButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [dissolveButton addTarget:self action:@selector(dissolveToModalView:) forControlEvents:UIControlEventTouchUpInside];
+    [dissolveButton setFrame:CGRectMake(30, 80, 120, 30)];
+    [dissolveButton setTitle:@"Fondu" forState:UIControlStateNormal];
+    [self.view addSubview:dissolveButton];
+    // Recouvrement partiel
+    UIButton *curlButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [curlButton addTarget:self action:@selector(partialCurlToModalView:) forControlEvents:UIControlEventTouchUpInside];
+    [curlButton setFrame:CGRectMake(170, 80, 120, 30)];
+    [curlButton setTitle:@"Curl" forState:UIControlStateNormal];
+    [self.view addSubview:curlButton];
     
     // Do any additional setup after loading the view from its nib.
 }
+- (void) flipToModalView:(id)sender {
+    [self goToModalView:UIModalTransitionStyleFlipHorizontal]; }
+- (void) coverToModalView:(id)sender {
+    [self goToModalView:UIModalTransitionStyleCoverVertical]; }
+- (void) dissolveToModalView:(id)sender {
+    [self goToModalView:UIModalTransitionStyleCrossDissolve]; }
+- (void) partialCurlToModalView:(id)sender {
+    [self goToModalView:UIModalTransitionStylePartialCurl]; }
 
-- (void) selectFirstViewControllerOfListe:(id)sender {
-    UITabBarController *tabController = self.tabBarController; // Sélection de l’onglet le plus à gauche
-    tabController.selectedIndex = 0;
+- (void)goToModalView:(UIModalTransitionStyle)transitionStyle {
+    // Allocation d’une instance de SecondViewController
+    ModalViewController *controller = [[ModalViewController alloc] initWithNibName:@"ModalViewController" bundle:nil];
+    // self est le Delegate
+    controller.delegate = self;
+    // On choisit l’animation selon le paramètre
+    controller.modalTransitionStyle = transitionStyle;
+    // On affiche le contrôleur
+    [self presentModalViewController:controller animated:YES];
 }
 
-- (void) selectFirstViewController:(id)sender {
-    UITabBarController *tabController = self.tabBarController;
-    // Retrouver le contrôleur de la classe FirstViewController
-    // On parcourt le tableau des contrôleurs
-    UIViewController *controllerToSelect = nil;
-    for (UIViewController *controller in tabController.viewControllers)
-        if([controller isKindOfClass:NSClassFromString(@"FirstViewController")]) {
-            controllerToSelect = controller;
-            break; // On sort de la boucle
-        }
-            tabController.selectedViewController = controllerToSelect;
-    }
 - (void)viewDidUnload
 {
     [super viewDidUnload];
