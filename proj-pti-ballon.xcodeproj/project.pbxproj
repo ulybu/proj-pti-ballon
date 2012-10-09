@@ -13,6 +13,15 @@
 		9B28D230161C849600F23040 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B28D22E161C849600F23040 /* InfoPlist.strings */; };
 		9B28D232161C849700F23040 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B28D231161C849700F23040 /* main.m */; };
 		9B28D236161C849700F23040 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B28D235161C849700F23040 /* AppDelegate.m */; };
+		9B2969D1162441CB003156C4 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2969CF162441CB003156C4 /* ThirdViewController.m */; };
+		9B2969D2162441CB003156C4 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2969D0162441CB003156C4 /* ThirdViewController.xib */; };
+		9B2969D7162441F1003156C4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2969D5162441F1003156C4 /* SecondViewController.m */; };
+		9B2969D8162441F1003156C4 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2969D6162441F1003156C4 /* SecondViewController.xib */; };
+		9B2969DC16244213003156C4 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2969DA16244213003156C4 /* ModalViewController.m */; };
+		9B2969DD16244213003156C4 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2969DB16244213003156C4 /* ModalViewController.xib */; };
+		9B2969E61624479B003156C4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2969E41624479B003156C4 /* FirstViewController.m */; };
+		9B2969E71624479B003156C4 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2969E51624479B003156C4 /* FirstViewController.xib */; };
+		9B2969F616244ECE003156C4 /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2969F516244ECE003156C4 /* 18-envelope.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,19 @@
 		9B28D233161C849700F23040 /* proj-pti-ballon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "proj-pti-ballon-Prefix.pch"; sourceTree = "<group>"; };
 		9B28D234161C849700F23040 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B28D235161C849700F23040 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B2969CE162441CB003156C4 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		9B2969CF162441CB003156C4 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		9B2969D0162441CB003156C4 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		9B2969D4162441F1003156C4 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		9B2969D5162441F1003156C4 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		9B2969D6162441F1003156C4 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		9B2969D916244213003156C4 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		9B2969DA16244213003156C4 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		9B2969DB16244213003156C4 /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
+		9B2969E31624479B003156C4 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		9B2969E41624479B003156C4 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		9B2969E51624479B003156C4 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		9B2969F516244ECE003156C4 /* 18-envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-envelope.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +95,21 @@
 			isa = PBXGroup;
 			children = (
 				9B28D234161C849700F23040 /* AppDelegate.h */,
+				9B2969F516244ECE003156C4 /* 18-envelope.png */,
 				9B28D235161C849700F23040 /* AppDelegate.m */,
 				9B28D22C161C849600F23040 /* Supporting Files */,
+				9B2969CE162441CB003156C4 /* ThirdViewController.h */,
+				9B2969CF162441CB003156C4 /* ThirdViewController.m */,
+				9B2969D0162441CB003156C4 /* ThirdViewController.xib */,
+				9B2969E31624479B003156C4 /* FirstViewController.h */,
+				9B2969E41624479B003156C4 /* FirstViewController.m */,
+				9B2969E51624479B003156C4 /* FirstViewController.xib */,
+				9B2969D4162441F1003156C4 /* SecondViewController.h */,
+				9B2969D5162441F1003156C4 /* SecondViewController.m */,
+				9B2969D6162441F1003156C4 /* SecondViewController.xib */,
+				9B2969D916244213003156C4 /* ModalViewController.h */,
+				9B2969DA16244213003156C4 /* ModalViewController.m */,
+				9B2969DB16244213003156C4 /* ModalViewController.xib */,
 			);
 			path = "proj-pti-ballon";
 			sourceTree = "<group>";
@@ -142,6 +177,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B28D230161C849600F23040 /* InfoPlist.strings in Resources */,
+				9B2969D2162441CB003156C4 /* ThirdViewController.xib in Resources */,
+				9B2969D8162441F1003156C4 /* SecondViewController.xib in Resources */,
+				9B2969DD16244213003156C4 /* ModalViewController.xib in Resources */,
+				9B2969E71624479B003156C4 /* FirstViewController.xib in Resources */,
+				9B2969F616244ECE003156C4 /* 18-envelope.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +194,10 @@
 			files = (
 				9B28D232161C849700F23040 /* main.m in Sources */,
 				9B28D236161C849700F23040 /* AppDelegate.m in Sources */,
+				9B2969D1162441CB003156C4 /* ThirdViewController.m in Sources */,
+				9B2969D7162441F1003156C4 /* SecondViewController.m in Sources */,
+				9B2969DC16244213003156C4 /* ModalViewController.m in Sources */,
+				9B2969E61624479B003156C4 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +305,7 @@
 				9B28D23B161C849700F23040 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
