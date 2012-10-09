@@ -7,14 +7,53 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstViewController.h" 
+#import "SecondViewController.h" 
+#import "ThirdViewController.h"
+#import "FourthViewController.h"
+#import "FifthViewController.h"
+#import "SixthViewController.h"
 
 @implementation AppDelegate
 
+@synthesize tabBarController=_tabBarController;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    self.tabBarController= [[UITabBarController alloc] init];
+    
+    FirstViewController *firstViewController = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    firstViewController.title = @"Premier";
+    
+    SecondViewController *secondViewController = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:secondViewController];
+    navigationController.title = @"Deuxième";
+    [navigationController setNavigationBarHidden:NO];
+    
+    ThirdViewController *thirdViewController = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
+    thirdViewController.title = @"Troisième";
+    
+    FourthViewController *fourthViewController = [[FourthViewController alloc] initWithNibName:@"FourthViewController" bundle:nil];
+    fourthViewController.title = @"Quatrième";
+    
+    FifthViewController *fifthViewController = [[FifthViewController alloc] initWithNibName:@"FifthViewController" bundle:nil];
+    UITabBarItem *tabBarItemFifth = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemTopRated tag:5];
+    fifthViewController.tabBarItem = tabBarItemFifth;
+    //fifthViewController.title = @"Cinquième";
+    
+    SixthViewController *sixthViewController = [[SixthViewController alloc] initWithNibName:@"SixthViewController" bundle:nil];
+    UITabBarItem *tabBarItemSixth = [[UITabBarItem alloc] initWithTitle:@"Sixième" image:[UIImage imageNamed:@"18-envelope.png"] tag:6];
+    sixthViewController.tabBarItem = tabBarItemSixth;
+    //sixthViewController.title = @"Sixième";
+    
+    
+    
+    _tabBarController.viewControllers = [NSArray arrayWithObjects:firstViewController, fourthViewController,fifthViewController, thirdViewController,navigationController, sixthViewController, nil];
+    
+    [self.window setRootViewController:_tabBarController];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
