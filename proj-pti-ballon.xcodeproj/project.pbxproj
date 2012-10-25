@@ -22,6 +22,16 @@
 		9B2969E61624479B003156C4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2969E41624479B003156C4 /* FirstViewController.m */; };
 		9B2969E71624479B003156C4 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2969E51624479B003156C4 /* FirstViewController.xib */; };
 		9B2969F616244ECE003156C4 /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2969F516244ECE003156C4 /* 18-envelope.png */; };
+		9B7E478816391EC000878A80 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E478516391EC000878A80 /* DownloadManager.m */; };
+		9B7E478916391EC000878A80 /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E478716391EC000878A80 /* DownloadOperation.m */; };
+		9B7E4D401639201B00878A80 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E4D3F1639201B00878A80 /* iCarousel.m */; };
+		9B7E4D461639202A00878A80 /* LBYouTubePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E4D431639202A00878A80 /* LBYouTubePlayerController.m */; };
+		9B7E4D471639202A00878A80 /* LBYouTubePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E4D451639202A00878A80 /* LBYouTubePlayerViewController.m */; };
+		9B7E4D4D1639203100878A80 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B7E4D491639203100878A80 /* CHANGELOG.md */; };
+		9B7E4D4E1639203100878A80 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E4D4B1639203100878A80 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9B7E4D4F1639203100878A80 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B7E4D4C1639203100878A80 /* README.md */; };
+		9B7E4D52163920B100878A80 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7E4D51163920B100878A80 /* QuartzCore.framework */; };
+		9B7E4D54163920B700878A80 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7E4D53163920B700878A80 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +58,23 @@
 		9B2969E41624479B003156C4 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		9B2969E51624479B003156C4 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		9B2969F516244ECE003156C4 /* 18-envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-envelope.png"; sourceTree = "<group>"; };
+		9B7E478316391EC000878A80 /* DownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadDelegate.h; path = MSToolTips/MSToolTips/DownloadDelegate.h; sourceTree = SOURCE_ROOT; };
+		9B7E478416391EC000878A80 /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadManager.h; path = MSToolTips/MSToolTips/DownloadManager.h; sourceTree = SOURCE_ROOT; };
+		9B7E478516391EC000878A80 /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadManager.m; path = MSToolTips/MSToolTips/DownloadManager.m; sourceTree = SOURCE_ROOT; };
+		9B7E478616391EC000878A80 /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadOperation.h; path = MSToolTips/MSToolTips/DownloadOperation.h; sourceTree = SOURCE_ROOT; };
+		9B7E478716391EC000878A80 /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadOperation.m; path = MSToolTips/MSToolTips/DownloadOperation.m; sourceTree = SOURCE_ROOT; };
+		9B7E4D3E1639201B00878A80 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		9B7E4D3F1639201B00878A80 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		9B7E4D421639202A00878A80 /* LBYouTubePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTubePlayerController.h; sourceTree = "<group>"; };
+		9B7E4D431639202A00878A80 /* LBYouTubePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYouTubePlayerController.m; sourceTree = "<group>"; };
+		9B7E4D441639202A00878A80 /* LBYouTubePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTubePlayerViewController.h; sourceTree = "<group>"; };
+		9B7E4D451639202A00878A80 /* LBYouTubePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYouTubePlayerViewController.m; sourceTree = "<group>"; };
+		9B7E4D491639203100878A80 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		9B7E4D4A1639203100878A80 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		9B7E4D4B1639203100878A80 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		9B7E4D4C1639203100878A80 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9B7E4D51163920B100878A80 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9B7E4D53163920B700878A80 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B7E4D54163920B700878A80 /* MediaPlayer.framework in Frameworks */,
+				9B7E4D52163920B100878A80 /* QuartzCore.framework in Frameworks */,
 				9B28D226161C849600F23040 /* UIKit.framework in Frameworks */,
 				9B28D228161C849600F23040 /* Foundation.framework in Frameworks */,
 				9B28D22A161C849600F23040 /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +113,8 @@
 		9B28D224161C849600F23040 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B7E4D53163920B700878A80 /* MediaPlayer.framework */,
+				9B7E4D51163920B100878A80 /* QuartzCore.framework */,
 				9B28D225161C849600F23040 /* UIKit.framework */,
 				9B28D227161C849600F23040 /* Foundation.framework */,
 				9B28D229161C849600F23040 /* CoreGraphics.framework */,
@@ -94,6 +125,8 @@
 		9B28D22B161C849600F23040 /* proj-pti-ballon */ = {
 			isa = PBXGroup;
 			children = (
+				9B7E4D591639212B00878A80 /* Third Party */,
+				9B7E478B16391EC400878A80 /* downoad */,
 				9B28D234161C849700F23040 /* AppDelegate.h */,
 				9B2969F516244ECE003156C4 /* 18-envelope.png */,
 				9B28D235161C849700F23040 /* AppDelegate.m */,
@@ -123,6 +156,62 @@
 				9B28D233161C849700F23040 /* proj-pti-ballon-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B7E478B16391EC400878A80 /* downoad */ = {
+			isa = PBXGroup;
+			children = (
+				9B7E478316391EC000878A80 /* DownloadDelegate.h */,
+				9B7E478416391EC000878A80 /* DownloadManager.h */,
+				9B7E478516391EC000878A80 /* DownloadManager.m */,
+				9B7E478616391EC000878A80 /* DownloadOperation.h */,
+				9B7E478716391EC000878A80 /* DownloadOperation.m */,
+			);
+			name = downoad;
+			sourceTree = "<group>";
+		};
+		9B7E4D3D1639201B00878A80 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				9B7E4D3E1639201B00878A80 /* iCarousel.h */,
+				9B7E4D3F1639201B00878A80 /* iCarousel.m */,
+			);
+			name = iCarousel;
+			path = MSToolTips/vendor/iCarousel/iCarousel;
+			sourceTree = SOURCE_ROOT;
+		};
+		9B7E4D411639202A00878A80 /* LBYouTubePlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				9B7E4D421639202A00878A80 /* LBYouTubePlayerController.h */,
+				9B7E4D431639202A00878A80 /* LBYouTubePlayerController.m */,
+				9B7E4D441639202A00878A80 /* LBYouTubePlayerViewController.h */,
+				9B7E4D451639202A00878A80 /* LBYouTubePlayerViewController.m */,
+			);
+			name = LBYouTubePlayerController;
+			path = MSToolTips/vendor/LBYoutubeView/LBYouTubePlayerController;
+			sourceTree = SOURCE_ROOT;
+		};
+		9B7E4D481639203100878A80 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				9B7E4D491639203100878A80 /* CHANGELOG.md */,
+				9B7E4D4A1639203100878A80 /* JSONKit.h */,
+				9B7E4D4B1639203100878A80 /* JSONKit.m */,
+				9B7E4D4C1639203100878A80 /* README.md */,
+			);
+			name = JSONKit;
+			path = MSToolTips/vendor/LBYoutubeView/Submodules/JSONKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		9B7E4D591639212B00878A80 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				9B7E4D481639203100878A80 /* JSONKit */,
+				9B7E4D411639202A00878A80 /* LBYouTubePlayerController */,
+				9B7E4D3D1639201B00878A80 /* iCarousel */,
+			);
+			name = "Third Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +271,8 @@
 				9B2969DD16244213003156C4 /* ModalViewController.xib in Resources */,
 				9B2969E71624479B003156C4 /* FirstViewController.xib in Resources */,
 				9B2969F616244ECE003156C4 /* 18-envelope.png in Resources */,
+				9B7E4D4D1639203100878A80 /* CHANGELOG.md in Resources */,
+				9B7E4D4F1639203100878A80 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +289,12 @@
 				9B2969D7162441F1003156C4 /* SecondViewController.m in Sources */,
 				9B2969DC16244213003156C4 /* ModalViewController.m in Sources */,
 				9B2969E61624479B003156C4 /* FirstViewController.m in Sources */,
+				9B7E478816391EC000878A80 /* DownloadManager.m in Sources */,
+				9B7E478916391EC000878A80 /* DownloadOperation.m in Sources */,
+				9B7E4D401639201B00878A80 /* iCarousel.m in Sources */,
+				9B7E4D461639202A00878A80 /* LBYouTubePlayerController.m in Sources */,
+				9B7E4D471639202A00878A80 /* LBYouTubePlayerViewController.m in Sources */,
+				9B7E4D4E1639203100878A80 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

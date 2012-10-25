@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FifthViewController : UIViewController
+@interface FirstViewController : UIViewController
 
 @end
