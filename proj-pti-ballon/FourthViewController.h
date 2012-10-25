@@ -1,5 +1,5 @@
 //
-//  FifthViewController.h
+//  FourthViewController.h
 //  proj-pti-ballon
 //
 //  Created by Élèves on 09/10/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FifthViewController : UIViewController
+@interface FourthViewController : UIViewController
 
 @end
